@@ -1,0 +1,88 @@
+/* Reset some default styles for consistency across browsers */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*Three image containers (use 25% for four, and 50% for two, etc) */
+.column{
+  float: left;
+  width: 20%;
+  padding: 5px;
+  
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  Clear: both;
+  display:table;
+}
+/* Set a background color and font styles */
+body {
+  background-color: #f4f4f4;
+  font-family: 'times', sans-serif;
+  color: #333;
+} 
+body h2{
+	color:#43302E;
+}
+
+/* Style the header section */
+header {
+  background-color: #00796b;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+/* Style the navigation menu */
+nav {
+  background-color: #004d40;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style the main content area */
+main {
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #00796b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Add some responsive styles for smaller screens */
+@media (max-width: 768px) {
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
